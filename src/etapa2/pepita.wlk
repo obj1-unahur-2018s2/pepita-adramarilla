@@ -1,4 +1,4 @@
-import comidas.*
+import comidas.* //para traer los metodos que estan en otro archivo
 
 /*
  * p.ej. pepita.comer(alpiste, 300) o pepita.comer(alcaucil, 50) 
@@ -10,8 +10,8 @@ object pepita {
 	method volar(kms) { energia -= kms + 10 }
 	
 	// metodos nuevos
-	method estaDebil() { return true }  // implementar
-	method estaFeliz() { return true }  // implementar
+	method estaDebil() { return energia < 50 }  // implementar
+	method estaFeliz() { return 500<energia and energia<1000 }  // implementar
 	
 	method cuantoQuiereVolar() { 
 		var cuanto = self.energia() / 5
