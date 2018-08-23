@@ -46,6 +46,24 @@ object mijo {
 }
 
 object canelones {
-//	method energiaPorGramo() { return 3 }
+	var tieneSalsa = false
+	var tieneQueso = false
+	
+	const base = 20
+	const plusSalsa = 5
+	const plusQueso = 7
+	
+	method energiaPorGramo(){
+		return base
+			+(if (tieneSalsa) {plusSalsa} else {0})
+			+(if (tieneQueso) {plusQueso} else {0})
+	}
+	
+	method ponerSalsa() { tieneSalsa = true}
+	method sacarSalsa() { tieneSalsa = false}
+	method ponerQueso() { tieneQueso = true}
+	method sacarQueso() { tieneQueso = false}
+	
+	//	method energiaPorGramo() { return 3 }
 }
 // despues, agregar mijo y canelones
