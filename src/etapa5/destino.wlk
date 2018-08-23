@@ -12,7 +12,7 @@ object mardelplata {
 	var temporadabaja = false
 	
 		method energiaDestino(ave) { 
-			+(if (temporadabaja) { return 80} else { return -20} )
+			(if (temporadabaja) { return 80} else { return -20} )
 		}
 	method temporada_baja() { temporadabaja = true}
 }
