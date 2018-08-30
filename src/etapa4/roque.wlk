@@ -1,6 +1,3 @@
-/*
- * Copiar pepita.wlk y comidas.wlk desde etapa3
- */
 import pepita.*
 import comidas.*
 import masAves.*
@@ -16,7 +13,6 @@ object roque {
 		pupilo.haceLoQueQuieras()
 	}
 	
-	method tuPupiloEs(ave) { 
-		pupilo = ave
-	}
+	method tuPupiloEs(ave) { pupilo = ave }
+	method pupiloActual() { return pupilo }
 }
